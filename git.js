@@ -12,7 +12,6 @@ app.get('/', function (req, res) {
 })
 
 app.post('/push_www', function (req, res) {
-  //exec sh
   process.exec('/home/ubuntu/node/www.sh', null, function (err, stdout, stderr) {
     console.log(err)
     console.log(stdout)
@@ -22,7 +21,6 @@ app.post('/push_www', function (req, res) {
 })
 
 app.post('/push_node', function (req, res) {
-  //exec sh
   process.exec('/home/ubuntu/node/node.sh', null, function (err, stdout, stderr) {
     console.log(err)
     console.log(stdout)
