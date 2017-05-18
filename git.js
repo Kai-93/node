@@ -7,10 +7,12 @@ const http = require('http')
 const app = express()
 const process = require('child_process')
 
-app.get('/', function (req, res) {
+/*app.get('/', function (req, res) {
   //index
   res.sendFile('/home/ubuntu/www/index.html')
-})
+})*/
+
+app.use(express.static('/home/ubuntu/www/index.html'));
 
 app.post('/push_www', function (req, res) {
   process.exec('/home/ubuntu/node/www.sh', null, function (err, stdout, stderr) {
