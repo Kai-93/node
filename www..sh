@@ -1,8 +1,9 @@
 #!/bin/bash
 
-WEB_PATH='/home/ubuntu/git-node/www'
-WEB_USER='root'
-WEB_USERGROUP='root'
+WEB_PATH='/home/ubuntu/www'
+NODE_PATH='/home/ubuntu/node'
+USER='root'
+USERGROUP='root'
 
 echo "Start deployment"
 cd $WEB_PATH
@@ -12,8 +13,9 @@ git clean -f
 git pull
 git checkout master
 echo "changing permissions..."
-chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH
+chown -R $USER:$USERGROUP $WEB_PATH
 echo "Finished."
+cd $WEB_PATH
 forever stop git.js
 echo 'stop git.js'
 forever start git.js
