@@ -9,6 +9,7 @@ const process = require('child_process')
 
 app.get('/', function (req, res) {
   //todo git push
+  res.send('ok')
   res.sendFile('/home/ubuntu/www/index.html')
 
 })
