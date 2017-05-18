@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "git.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiseerZ/node.git"
+  },
+  "author": "Kaiseer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaiseerZ/node/issues"
+  },
+  "homepage": "https://github.com/KaiseerZ/node#readme",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
