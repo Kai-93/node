@@ -12,7 +12,4 @@ git checkout master
 echo "changing permissions..."
 chown -R $USER:$USERGROUP $WEB_PATH
 echo "Finished."
-forever stop git.js
-echo 'stop git.js'
-forever start git.js
-echo 'start git.js'
+

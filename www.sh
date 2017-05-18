@@ -16,7 +16,4 @@ echo "changing permissions..."
 chown -R $USER:$USERGROUP $WEB_PATH
 echo "Finished."
 cd $WEB_PATH
-forever stop git.js
-echo 'stop git.js'
-forever start git.js
-echo 'start git.js'
+
