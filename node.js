@@ -7,7 +7,7 @@ const http = require('http')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('this is index')
+  res.send('ok')
 })
 
 let httpServer = http.createServer(app)
