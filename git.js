@@ -7,7 +7,7 @@ const http = require('http')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('/home/ubuntu/www')
+  res.send('index')
 })
 
 let httpServer = http.createServer(app)
