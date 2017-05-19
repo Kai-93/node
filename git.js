@@ -7,7 +7,7 @@ const http = require('http')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.sendFile('/home/ubuntu/www')
+  res.send('/home/ubuntu/www')
 })
 
 let httpServer = http.createServer(app)
