@@ -8,7 +8,6 @@ const app = express()
 const process = require('child_process')
 
 app.get('/', function (req, res) {
-  //index
   res.sendFile('/home/ubuntu/www')
 })
 
