@@ -7,7 +7,8 @@ const http = require('http')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('It is ok~')
+  let _data = require('./package.json')
+  res.send(_data)
 })
 
 let httpServer = http.createServer(app)
